@@ -19,4 +19,4 @@ https://panther-go-api.herokuapp.com/locations/SportsFacilities/1
 Retrieve the museum with ID == 1:  
 https://panther-go-api.herokuapp.com/locations/Museums/1  
 
-It also has user basic registration/login functionality
+It also has basic user registration/login functionality
