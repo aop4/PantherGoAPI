@@ -1,17 +1,56 @@
 from rest_framework import serializers
-from rest_api.models import Student
+from rest_api.models import *
 
-# Define a serializer that serves as an interface to the Student
-# class, allowing its instances to be created, retrieved, and updated
-# with various formats (JSON, XML, probably things I don't know about)
-# See some documentation on serializers here: http://www.django-rest-framework.org/tutorial/1-serialization/
-# AND PLEASE please please if you read that, look at the section Model Serializers--
-# that will save you loads of time and is used below
-class DataModelSerializer(serializers.ModelSerializer):
+basic_info = ('uuid', 'latitude', 'longitude', 'name', 'id')
+
+class BasicAcademicBuildingSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Student
-        fields = ('uuid', 'name', 'id') # you can explicitly define the 
-                                  # fields to include in serialized model
-        # fields = '__all__' # you can also say "__all__", but this may 
-                             # expose data you don't want exposed by giving
-                             # access to all model fields
+        model = AcademicBuilding
+        fields = basic_info
+
+class BasicRestaurantSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Restaurant
+        fields = basic_info
+
+class BasicOutdoorAttractionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OutdoorAttraction
+        fields = basic_info
+
+class BasicSportsFacilitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SportsFacility
+        fields = basic_info
+
+class BasicMuseumSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Museum
+        fields = basic_info
+
+
+class DetailedAcademicBuildingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AcademicBuilding
+        fields = '__all__'
+
+class DetailedRestaurantSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Restaurant
+        fields = '__all__'
+
+class DetailedOutdoorAttractionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OutdoorAttraction
+        fields = '__all__'
+
+class DetailedSportsFacilitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SportsFacility
+        fields = '__all__'
+
+class DetailedMuseumSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Museum
+        fields = '__all__'
+

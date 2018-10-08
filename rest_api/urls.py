@@ -21,6 +21,12 @@ from rest_api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('students/', views.Students.as_view()),
-    url(r'^students/(?P<id>[0-9]+)$', views.StudentInstance.as_view()),
+    path('register/', views.Register.as_view()),
+    path('login/', views.Login.as_view()),
+    path('locations/', views.Locations.as_view()),
+    url(r'^locations/Restaurants/(?P<id>[0-9]+)$', views.RestaurantInstance.as_view()),
+    url(r'^locations/AcademicBuildings/(?P<id>[0-9]+)$', views.AcademicBuildingInstance.as_view()),
+    url(r'^locations/OutdoorAttractions/(?P<id>[0-9]+)$', views.OutdoorAttractionInstance.as_view()),
+    url(r'^locations/SportsFacilities/(?P<id>[0-9]+)$', views.SportsFacilityInstance.as_view()),
+    url(r'^locations/Museums/(?P<id>[0-9]+)$', views.MuseumInstance.as_view()),
 ]

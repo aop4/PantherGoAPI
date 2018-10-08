@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'rest_api',
-    'rest_framework'
+    'rest_framework',
+    'drf_multiple_model',
 ]
 
 MIDDLEWARE = [
