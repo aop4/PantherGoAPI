@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "393e6be5fb69f57a96d07cd76e251eece3692fa307048867db92490b70b65bdf"
+            "sha256": "8f3eefd0de5f17d7987dedfaa2cf07a1578ad1bf62ef411a8e8e66bb190cce7d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,14 @@
         ]
     },
     "default": {
+        "certifi": {
+            "hashes": [
+                "sha256:376690d6f16d32f9d1fe8932551d80b23e9d393a8578c5633a2ed39a64861638",
+                "sha256:456048c7e371c089d0a77a5212fb37a2c2dce1e24146e3b7e0261736aaeaa22a"
+            ],
+            "index": "pypi",
+            "version": "==2018.8.24"
+        },
         "dj-database-url": {
             "hashes": [
                 "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163",
@@ -25,10 +33,7 @@
             "version": "==0.5.0"
         },
         "django": {
-            "hashes": [
-                "sha256:acdcc1f61fdb0a0c82a1d3bf1879a414e7732ea894a7632af7f6d66ec7ab5bb3",
-                "sha256:efbcad7ebb47daafbcead109b38a5bd519a3c3cd92c6ed0f691ff97fcdd16b45"
-            ],
+            "hashes": [],
             "index": "pypi",
             "version": "==2.1.2"
         },
@@ -39,6 +44,14 @@
             ],
             "index": "pypi",
             "version": "==0.3.1"
+        },
+        "django-rest-multiple-models": {
+            "hashes": [
+                "sha256:3e98b87b382a05bc34622411d3f5b68ed3ab958d78cf70e09218d1d022652b06",
+                "sha256:54c9c2e92a56c751772acbf1dd3cfc95933645d27fe2a18366eb58ac4c47517e"
+            ],
+            "index": "pypi",
+            "version": "==2.1.1"
         },
         "django-shortuuidfield": {
             "hashes": [
@@ -157,6 +170,22 @@
             ],
             "index": "pypi",
             "version": "==1.11.0"
+        },
+        "virtualenv": {
+            "hashes": [
+                "sha256:2ce32cd126117ce2c539f0134eb89de91a8413a29baac49cbab3eb50e2026669",
+                "sha256:ca07b4c0b54e14a91af9f34d0919790b016923d157afda5efdde55c96718f752"
+            ],
+            "index": "pypi",
+            "version": "==16.0.0"
+        },
+        "virtualenv-clone": {
+            "hashes": [
+                "sha256:4507071d81013fd03ea9930ec26bc8648b997927a11fa80e8ee81198b57e0ac7",
+                "sha256:b5cfe535d14dc68dfc1d1bb4ac1209ea28235b91156e2bba8e250d291c3fb4f8"
+            ],
+            "index": "pypi",
+            "version": "==0.3.0"
         },
         "whitenoise": {
             "hashes": [
